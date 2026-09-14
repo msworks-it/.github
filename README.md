@@ -8,6 +8,18 @@ brand usati per renderizzarlo.
 ## Struttura
 
 ```
+CONTRIBUTING.md              ┐
+SECURITY.md                  │ file di community: valgono come default per
+SUPPORT.md                   │ TUTTI i repo pubblici dell'organizzazione che
+CODE_OF_CONDUCT.md           ┘ non ne hanno una copia propria
+
+.github/
+  PULL_REQUEST_TEMPLATE.md   template della descrizione di ogni PR
+  ISSUE_TEMPLATE/
+    config.yml               disattiva le issue vuote, aggiunge i link di contatto
+    1-bug.yml                form "Segnala un bug"
+    2-proposta.yml           form "Proponi una modifica"
+
 profile/
   README.md                  ← il README mostrato su github.com/msworks-it
   assets/
@@ -48,6 +60,11 @@ testa al file, il blob base64 del font è l'unica parte da non toccare.
 ## Come GitHub usa questo repository
 
 GitHub mostra `profile/README.md` sulla pagina pubblica dell'organizzazione. Il repository deve
-chiamarsi esattamente `.github` ed essere pubblico. Qui possono essere aggiunti anche i file di
-community condivisi da tutti i repo dell'organizzazione (`CONTRIBUTING.md`, `SECURITY.md`,
-`ISSUE_TEMPLATE/`, `PULL_REQUEST_TEMPLATE.md`).
+chiamarsi esattamente `.github` ed essere pubblico.
+
+I file di community (`CONTRIBUTING.md`, `SECURITY.md`, `SUPPORT.md`, `CODE_OF_CONDUCT.md`, i template
+di issue e PR) valgono come **default per tutti i repository pubblici dell'organizzazione**: un repo
+che non ha la propria copia eredita automaticamente questa. Per sovrascriverli in un singolo
+progetto basta metterci dentro un file con lo stesso nome — quello locale vince sempre.
+
+I default **non** si applicano ai repository privati.

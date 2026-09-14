@@ -1,0 +1,72 @@
+name: Segnala un bug
+description: Qualcosa non funziona come dovrebbe.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per la segnalazione. Italiano o inglese, come preferisci.
+
+        **Se si tratta di una vulnerabilità di sicurezza, chiudi questa pagina** e segui
+        [SECURITY.md](https://github.com/msworks-it/.github/blob/main/SECURITY.md): una issue
+        pubblica espone il problema prima che sia corretto.
+
+  - type: textarea
+    id: cosa-succede
+    attributes:
+      label: Cosa succede
+      description: Cosa ti aspettavi, e cosa succede davvero.
+      placeholder: |
+        Mi aspettavo che...
+        Invece...
+    validations:
+      required: true
+
+  - type: textarea
+    id: riprodurre
+    attributes:
+      label: Come riprodurlo
+      description: I passi minimi per farlo succedere di nuovo. È la parte che ci serve di più.
+      placeholder: |
+        1. Vai su...
+        2. Clicca su...
+        3. Il risultato è...
+    validations:
+      required: true
+
+  - type: textarea
+    id: errore
+    attributes:
+      label: Errore o log
+      description: Messaggio di errore, stack trace, output della console. Incollali qui, si formattano da soli.
+      render: shell
+    validations:
+      required: false
+
+  - type: input
+    id: versione
+    attributes:
+      label: Versione
+      description: Versione del pacchetto, tag o commit su cui l'hai visto.
+      placeholder: "v1.4.2, oppure commit a1b2c3d"
+    validations:
+      required: true
+
+  - type: input
+    id: ambiente
+    attributes:
+      label: Ambiente
+      description: Sistema operativo, runtime, browser — quello che è rilevante nel tuo caso.
+      placeholder: "Windows 11, Node 22.3, Chrome 140"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: verifiche
+    attributes:
+      label: Prima di inviare
+      options:
+        - label: Ho cercato tra le issue aperte e non ne ho trovata una uguale.
+          required: true
+        - label: Non ho incollato qui chiavi, token, password o dati personali di qualcuno.
+          required: true

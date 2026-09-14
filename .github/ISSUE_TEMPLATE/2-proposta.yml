@@ -1,0 +1,54 @@
+name: Proponi una modifica
+description: Una funzionalità nuova, o un cambiamento a una esistente.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Raccontaci il problema prima della soluzione: è la parte che ci serve per capire se e come
+        farlo. Italiano o inglese, come preferisci.
+
+  - type: textarea
+    id: problema
+    attributes:
+      label: Il problema
+      description: Cosa non riesci a fare oggi, o cosa ti costa più fatica di quanto dovrebbe.
+      placeholder: "Quando devo..., sono costretto a... e questo significa che..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: soluzione
+    attributes:
+      label: Come lo risolveresti
+      description: La tua idea. Anche a grandi linee.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternative
+    attributes:
+      label: Alternative che hai considerato
+      description: Compreso "per ora lo aggiro così". Sapere come te la cavi adesso ci dice quanto urge.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: contributo
+    attributes:
+      label: Te ne occuperesti tu?
+      description: Nessun impegno, serve solo a sapere come organizzarci.
+      options:
+        - "Sì, aprirei io la pull request"
+        - "Forse, con un'indicazione su come impostarla"
+        - "No, la lascio a voi"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: verifiche
+    attributes:
+      label: Prima di inviare
+      options:
+        - label: Ho cercato tra le issue aperte e non ne ho trovata una uguale.
+          required: true
