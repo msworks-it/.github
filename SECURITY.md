@@ -9,8 +9,13 @@
 Facciamo security audit e penetration test per mestiere. Prendiamo sul serio le segnalazioni che
 arrivano a noi, e trattiamo chi le manda come tratteremmo un collega.
 
-**Non aprire una issue pubblica per una vulnerabilità.** Scrivi a
-**[antonio.murabito@msworks.it](mailto:antonio.murabito@msworks.it)**.
+**Non aprire una issue pubblica per una vulnerabilità.** Hai due strade, scegli quella che preferisci:
+
+1. **Da GitHub** — nel repository interessato: scheda **Security** → **Report a vulnerability**. La
+   segnalazione resta privata tra te e noi, e il thread è già pronto per allegare la proof of concept
+   e discutere la correzione.
+2. **Via email** — **[antonio.murabito@msworks.it](mailto:antonio.murabito@msworks.it)**. Se hai una
+   chiave PGP e vuoi usarla, chiedicela nella prima mail.
 
 ---
 
@@ -76,9 +81,10 @@ idea volentieri di fronte a una proof of concept.
 
 ## Reporting a vulnerability (English)
 
-**Please do not open a public issue.** Email
-**[antonio.murabito@msworks.it](mailto:antonio.murabito@msworks.it)** — in English or Italian, both
-are fine.
+**Please do not open a public issue.** Either use GitHub's **Security → Report a vulnerability** on
+the affected repository (private, and the best channel for a proof of concept), or email
+**[antonio.murabito@msworks.it](mailto:antonio.murabito@msworks.it)**. English or Italian, both are
+fine.
 
 Include where the issue is, what it allows an attacker to do, and how to reproduce it. We acknowledge
 within **3 working days**, triage within **10 working days**, and coordinate public

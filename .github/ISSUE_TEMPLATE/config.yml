@@ -2,7 +2,7 @@ blank_issues_enabled: false
 contact_links:
   - name: Ho trovato una vulnerabilità di sicurezza
     url: https://github.com/msworks-it/.github/blob/main/SECURITY.md
-    about: Non aprire una issue pubblica. Qui trovi come segnalarla in privato.
+    about: Non aprire una issue pubblica. Usa Security > Report a vulnerability, o scrivici in privato.
   - name: Sono un cliente M's Works
     url: https://github.com/msworks-it/.github/blob/main/SUPPORT.md
     about: Per i progetti dei clienti GitHub non è il canale giusto. WhatsApp o email.
