@@ -1,7 +1,8 @@
-<a href="https://www.msworks.it"><picture>
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/msworks-it/.github/main/profile/assets/logo-mark-white.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/msworks-it/.github/main/profile/assets/logo-mark-dark.svg">
   <img alt="M's Works" src="https://raw.githubusercontent.com/msworks-it/.github/main/profile/assets/logo-mark-dark.svg" height="36">
-</picture></a>
+</picture>
 
 # Codice di condotta
 
